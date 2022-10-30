@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Estilos generales */
+
+:root {
+
+    --background-grey: #F1F1F1;
+    --background: #FFFFFF;
+    --color-violet: #1E0E62;
+    --borde: #EBEAED;
+
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Navbar estilos */
+
+.headerSticky {
+
+    position: sticky;
+    top: 0 !important;
+
+}
+
+.navbar {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 15px;
+    color: white;
+
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: var(--color-violet);
+    border-radius: 100px;
+
+}
+
+.navbar .emailBorder{
+
+    border: 2px solid var(--borde);
+    color: var(--color-violet);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+
+}
+
+.logo {
+
+    margin-right: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 80px;
+
+}
+
+.list {
+
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.list li{
+
+    padding-right: 30px;
+
+}
+
+li:nth-child(3) {
+
+    background-color: var(--background-nav);
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+#toggler,
+.navbar label {
+
+    display: none;
+
+}
+
+/* Inicio estilos */
+
+.contenedorGrid {
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    padding: 50px;
+    background-color: var(--background-grey);
+
+}
+
+.contenedorGrid>.descripcionExequiel>h2 {
+
+    font-size: 40px;
+
+}
+
+.contenedorGrid>.descripcionExequiel>p {
+
+    padding-top: 60px;
+    width: 30rem;
+
+}
+
+.contenedorGrid img {
+
+    border-radius: 15px;
+    height: 400px;
+    transition: all .2s;
+
+}
+
+.contenedorGrid img:hover {
+
+    transform: translateY(-10px);
+
+}
+
+/* estilos habilidades */
+
+.backgroundHabilidades {
+
+    background-color: var(--background-grey);
+
+}
+
+.contenedorTecnologias .tecnologias {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 90px;
+
+}
+
+.contenedorHabilidades {
+
+    padding: 50px;
+
+}
+
+.contenedorHabilidades :is(.misHabilidades, .parrafoHabilidades) {
+
+    text-align: center;
+
+}
+
+:where(.misHabilidades) {
+
+    font-size: 35px;
+    font-weight: bolder;
+    color: #1E0E62;
+
+}
+
+:where(.parrafoHabilidades) {
+
+    margin-top: 20px;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+:where(.parrafoTecnologias) {
+
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px;
+
+}
+
+.containerReact,
+.containerJavascript,
+.containerSass .tecnolo {
+
+    text-align: center;
+    color: #1E0E62;
+
+}
+
+/* Experiencia estilos */
+
+.backgroundExperiencia {
+
+    background-color: var(--background);
+    padding: 40px;
+
+}
+
+.textosExperiencia {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.textosExperiencia>p {
+
+    text-align: center;
+
+}
+
+.textosExperiencia>.miExperiencia {
+
+    font-size: 35px;
+    color: var(--color-violet);
+
+}
+
+.textosExperiencia>.botonGithub {
+
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all .5s;
+    background-color: #25DAC5;
+
+
+}
+
+.textosExperiencia>.botonGithub {
+
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+.containerCards {
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.containerCards .card {
+
+    width: 390px;
+    height: 490px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    border-radius: 8px;
+
+}
+
+.containerCards .card:hover {
+
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.containerCards .card img {
+
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+
+}
+
+.containerCards .card p {
+
+    margin-top: 25px;
+    text-align: left;
+    color: rgba(21, 20, 57, 0.4);
+    font-size: 16px;
+    margin-bottom: 20px;
+
+
+}
+
+.containerCards .card h2 {
+
+    font-size: 22px;
+    text-align: left;
+    color: var(--color-violet);
+
+
+}
+
+.contentCard{
+
+    padding: 10px;
+
+}
+
+.contentCard > .buttonVer{
+
+
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+/* Contacto estilos */
+.containerContactos {
+
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.containerContactos h2 {
+
+    font-size: 35px;
+
+}
+
+.iconosFlex{
+
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 25px;
+    margin-top: 50px;
+    color: #9999A7;
+
+}
+
+.containerFooter > .mail{
+
+    color: #482BE7;
+
+}
+
+
+/* Medias queries */
+
+@media screen and (max-width:1004px) {
+
+    .contenedorGrid {
+
+        grid-template-columns: auto;
+
+    }
+
+    .contenedorGrid>.descripcionExequiel h2 {
+
+        text-align: center;
+
+    }
+
+    .contenedorGrid>.descripcionExequiel p {
+
+        text-align: center;
+        margin-bottom: 25px;
+
+    }
+
+}
+
+@media (min-width:480px) and (max-width:700px) {
+
+    .contenedorGrid>.descripcionExequiel h2 {
+
+        font-size: 25px;
+
+    }
+
+    .contenedorGrid>.descripcionExequiel p {
+
+        font-size: 20px;
+        width: 400px;
+
+    }
+
+}
+
+/* Medias navbar */
+
+@media screen and (max-width:630px) {
+
+    .menu {
+
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+
+    }
+
+    .list {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .navbar label {
+
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+    #toggler:checked~.menu {
+
+        max-height: 100%;
+
+    }
+
+}
+
+/* media cards */
+
+@media (max-width:1354px){
+
+    .containerCards{
+
+        grid-template-columns: auto auto;
+
+    }
+
+}
+
+@media (max-width:950px){
+
+    .containerCards{
+
+        grid-template-columns: auto;
+
+    }
+
+}

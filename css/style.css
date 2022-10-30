@@ -70,11 +70,9 @@ body {
 
 .logo {
 
-    margin-right: 50px;
     font-size: 24px;
     font-weight: 700;
-    padding-left: 80px;
-
+    
 }
 
 .list {
@@ -104,6 +102,7 @@ li:nth-child(3) {
 .navbar label {
 
     display: none;
+    color: black;
 
 }
 
@@ -381,7 +380,7 @@ li:nth-child(3) {
 }
 
 
-/* Medias queries */
+/* Medias 1004px */
 
 @media screen and (max-width:1004px) {
 
@@ -406,6 +405,7 @@ li:nth-child(3) {
 
 }
 
+/* Medias de 480px a 700px */
 @media (min-width:480px) and (max-width:700px) {
 
     .contenedorGrid>.descripcionExequiel h2 {
@@ -423,7 +423,7 @@ li:nth-child(3) {
 
 }
 
-/* Medias navbar */
+/* Medias navbar de 630px */
 
 @media screen and (max-width:630px) {
 
@@ -459,7 +459,7 @@ li:nth-child(3) {
 
 }
 
-/* media cards */
+/* Medias cards de 1353px a 950px */
 
 @media (max-width:1354px){
 
@@ -478,5 +478,97 @@ li:nth-child(3) {
         grid-template-columns: auto;
 
     }
+
+}
+
+/* Media 280px */
+
+@media (280px <= width <= 420px){
+
+    .contenedorGrid{
+
+               
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contenedorGrid > .descripcionExequiel >h2{
+
+        font-size: 1.2rem;
+
+    }
+
+    .contenedorGrid > .descripcionExequiel >p{
+
+        font-size: 1.5rem;
+        width: 300px;
+
+    }
+
+    .contenedorGrid > .imagenExequiel img{
+
+        height: 250px;
+
+    }
+
+    .containerCards .card{
+
+        width: 200px;
+        height: 580px;
+
+    }
+
+    .containerFooter h2{
+
+        font-size: 20px;
+
+    }
+
+    .textosExperiencia .miExperiencia{
+
+        font-size: 25px;
+
+    }
+
+    .contenedorHabilidades .misHabilidades{
+
+        font-size: 20px;
+
+    }
+
+
+    .navbar a {
+
+        font-size: 14px;
+
+    }
+
+}
+
+/* Medias 420px a 480px */
+@media(420px <= width <= 480px){
+
+    .contenedorGrid > .descripcionExequiel >h2{
+
+        font-size: 20px;
+
+    }
+
+    .contenedorGrid > .descripcionExequiel >p{
+
+        font-size: 1.2rem;
+        width: 300px;
+
+    }
+
+    .contenedorGrid > .imagenExequiel img{
+
+        height: 300px;
+
+    }
+
 
 }
